@@ -36,7 +36,7 @@ h1{
     width: 135px;
     display: grid;
     row-gap: 20px;
-    grid-template-rows: 100px;
+    grid-template-rows: 100px 100px 100px 100px;
     margin: auto;
 }
 
