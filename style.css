@@ -16,7 +16,6 @@ body{
 
 .container{
     text-align: center;
-    height: 600px;
 }
 
 h1{
@@ -34,11 +33,11 @@ h1{
 }
 
 .time{
-    width: 135px;
     display: grid;
-    row-gap: 20px;
-    grid-template-rows: 100px 100px 100px 100px;
+    column-gap: 20px;
+    grid-template-columns: 100px 100px 100px 100px;
     margin: auto;
+    grid-template-rows: 100px;
 }
 
 #day,
@@ -64,5 +63,20 @@ h1{
 .time .item::after{
     left: unset;
     right: 0;
+}
+
+@media screen and (max-width:767px) {
+    .time{
+        width: 135px;
+        row-gap: 20px;
+        grid-template-rows: 100px 100px 100px 100px;
+
+        column-gap: unset;
+        grid-template-columns: unset;
+    }
+
+    .container{
+        height: 600px;
+    }
 }
 
