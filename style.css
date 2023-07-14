@@ -68,7 +68,7 @@ h1{
     right: 0;
 }
 
-@media screen and (max-width:393px) {
+@media screen and (max-width:767px) {
     body{
         background-size: cover;
     }
